@@ -27,7 +27,7 @@ const Donate = () => {
   ]
   return (
     <div className="donate">
-      <HomeContainer   title='donate' text='“Trust in the LORD, and do good; dwell in the land and befriend faithfulness”'  button='donate now' />
+      <HomeContainer    title='donate' text='“Trust in the LORD, and do good; dwell in the land and befriend faithfulness”'  button='donate now' />
       <section>
       <div className="center">
         <h4 className="tophead">

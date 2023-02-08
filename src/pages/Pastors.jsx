@@ -1,6 +1,8 @@
 import React from 'react'
 import HomeContainer from '../components/HomeContainer'
  
+import Img from '../assets/aboutbg.webp'
+
 
 const Pastors = () => {
   const data = [{
@@ -37,7 +39,7 @@ const Pastors = () => {
   ]
   return (
     <div className='pastor'>
-      <HomeContainer title='Pastors' subtitle='Psalm 37:3' text='“Trust in the LORD, and do good; dwell in the land and befriend faithfulness”' button='read more' />
+      <HomeContainer bgImg={Img} title='Pastors' subtitle='Psalm 37:3' text='“Trust in the LORD, and do good; dwell in the land and befriend faithfulness”' button='read more' />
       <section>
         <div className='center'>
           <h6 className='headline'>

@@ -1,30 +1,24 @@
-import React, { useState } from "react";
+import React from "react";
 import { serviceDropdown } from "./NavItems";
-import { NavLink } from "react-router-dom";
-import "../styles/Dropdown.css";
+import { useNavigate } from "react-router-dom";
 
 function Dropdown() {
-  const [dropdown, setDropdown] = useState(false);
+  let navigate = useNavigate();
+
+  function handleChange(value) {
+    navigate(`${value}`);
+  }
 
   return (
-      <ul
-        className={dropdown ? "services-submenu clicked" : "services-submenu"}
-        onClick={() => setDropdown(!dropdown)}
-      >
-        {serviceDropdown.map((item) => (
-          <li key={item.id}>
-            <NavLink
-              to={item.path}
-              className={({isActive}) => (isActive ? 'nav-active' : '') }
-
-              onClick={() => setDropdown(false)}
-          >
-            {item.title}
-          </NavLink>
-        </li>
+    <li>
+      <select onChange={event => handleChange(event.target.value)}>
+      <option className='nav-item'>About</option>
+      {serviceDropdown.map((item, index) => (
+          <option value={`${item.path}`} key={index}>{item.title}</option> 
         )
         )}
-      </ul>
+        </select>
+    </li>
   );
 }
 

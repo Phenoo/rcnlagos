@@ -1,11 +1,13 @@
 import React from 'react'
 import HomeContainer from '../components/HomeContainer'
 
+import Img from '../assets/partbg.webp'
+
 
 const Partnership = () => {
   return (
     <div className='partner-page'>
-      <HomeContainer  title='Partnership' text='“Trust in the LORD, and do good; dwell in the land and befriend faithfulness”'  button='join us'  />
+      <HomeContainer bgImg={Img}  title='Partnership' text='“Trust in the LORD, and do good; dwell in the land and befriend faithfulness”'  button='join us'  />
       <section>
         <h4 className="tophead">
           REMNANT KINGDOM STEWARD (RKS)

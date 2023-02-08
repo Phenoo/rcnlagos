@@ -4,6 +4,7 @@ import Search from '../components/Search'
 import HomeContainer from '../components/HomeContainer'
 import BlogCard from '../components/Blogs/BlogCard'
 
+import Img from '../assets/blogbg.webp'
 
 const Blogs = () => {
   const data = [{
@@ -42,7 +43,7 @@ const Blogs = () => {
   ]
   return (
     <div className="blogs">
-      <HomeContainer  title='blogs' text='“Trust in the LORD, and do good; dwell in the land and befriend faithfulness”'  button='read more' />
+      <HomeContainer bgImg={Img}  title='blogs' text='“Trust in the LORD, and do good; dwell in the land and befriend faithfulness”'  button='read more' />
       <section>
         <div className="button-container flex ">
           <button className="round active">all article</button>

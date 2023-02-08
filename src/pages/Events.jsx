@@ -2,6 +2,7 @@ import React from 'react'
 import HomeContainer from '../components/HomeContainer'
 import EventCard from '../components/Events/EventCard'
 
+import Img from '../assets/eventbg.webp'
 const Events = () => {
   const data = [{
     id: 1,
@@ -48,7 +49,7 @@ const Events = () => {
   ]
   return (
     <div>
-      <HomeContainer  title='events' text='“Trust in the LORD, and do good; dwell in the land and befriend faithfulness”'  button='participate' />
+      <HomeContainer bgImg={Img} title='events' text='“Trust in the LORD, and do good; dwell in the land and befriend faithfulness”'  button='participate' />
       <div className='upcoming'>
     <section>
       <div className="tri-grid">

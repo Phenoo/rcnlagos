@@ -117,10 +117,17 @@ select {
     background: none;
     color: #fff;
     text-transform: capitalize;
+    width: 100px;
+    padding: 8px;
 }
 
 option {
-    color: $orange;
+    color: #111;
+}
+
+select:active {
+    background: #808080;
+    color: #fff;
 }
 
 .space-between {
@@ -206,11 +213,15 @@ option {
 }
 
 .main-home {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('.././assets/bg.png');
     color: #fff;
-    background-position: 50% center;
+    // background-position: 50% center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 640px;
+    .overlay {
+        background: rgba(14, 31, 53, 0.7);
+        height: 640px;
+    }
     .home {
         display: flex;
         flex-direction: column;
@@ -221,6 +232,7 @@ option {
         padding: 2rem 0;
     }
     .tophead {
+        font-weight: 800;
         max-width: 700px;
         margin: 0 auto;
     }
@@ -764,12 +776,12 @@ footer {
             padding: 6rem 1rem 1rem;
             gap: 2rem;
             height: 100%;
-            .nav-item {
-                margin-bottom: 1rem;
-                font-size: 1.35rem;
-                color: #111;
-            }
         }
+    }
+    .nav-item {
+        margin-bottom: 1rem;
+        font-size: 1.35rem;
+        color: #111;
     }
     .grid {
         grid-template-columns: repeat(1, 1fr);
@@ -782,6 +794,12 @@ footer {
     .four-grid {
         grid-template-columns: repeat(3, 1fr);
         place-items: center;
+    }
+    .global {
+        .flex {
+            flex-direction: column;
+            gap: 2rem;
+        }
     }
 }
 

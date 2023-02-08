@@ -6,8 +6,9 @@ import Dropdown from './Dropdown'
 import { navItems } from './NavItems'
 
 const Navigation = () => {
-  const [dropdown, setDropdown] = useState(false);
-  const [navbar, setNavbar] = useState(false)
+  const [navbar, setNavbar] = useState(false);
+
+
   return (
     <nav id='nav'>
         <div className='space-between'>
@@ -17,17 +18,7 @@ const Navigation = () => {
             {navItems.map((item) => {
               if (item.title === "About") {
                 return (
-                  <li
-                    key={item.id}
-                    className={item.cName}
-                    onMouseEnter={() => setDropdown(true)}
-                    // onMouseLeave={() => setDropdown(false)}
-                    onClick={() => setDropdown(!dropdown)}
-                  >
-                    <NavLink to={item.path}
-                    >{item.title}</NavLink>
-                    {dropdown && <Dropdown />}
-                  </li>
+                <Dropdown />
                 );
               }
               return (

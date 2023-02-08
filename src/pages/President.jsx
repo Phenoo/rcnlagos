@@ -1,11 +1,14 @@
 import React from 'react'
 import HomeContainer from '../components/HomeContainer'
-import Img from '../assets/pastor.png'
+import Img1 from '../assets/pastor.png'
+
+import Img from '../assets/aboutbg.webp'
+
 
 const President = () => {
   return (
     <div className='president'>
-      <HomeContainer title='About President' subtitle='Psalm 37:3' text='“Trust in the LORD, and do good; dwell in the land and befriend faithfulness”' button='read more' />
+      <HomeContainer bgImg={Img} title='About President' subtitle='Psalm 37:3' text='“Trust in the LORD, and do good; dwell in the land and befriend faithfulness”' button='read more' />
       <section>
         <div className="flex">
           <div>
@@ -25,7 +28,7 @@ const President = () => {
             </p>
           </div>
           <div className='image'>
-            <img src={Img} alt="pastor" />
+            <img src={Img1} alt="pastor" />
           </div>
         </div>
         <br />

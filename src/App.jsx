@@ -5,8 +5,8 @@ import Contact from './pages/Contact';
 import HomePage from './pages/HomePage';
 import Partnership from './pages/Partnership';
 
-
 import './styles/App.scss'
+
 import Sermons from './pages/Sermons';
 import Events from './pages/Events';
 import Donate from './pages/Donate';

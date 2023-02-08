@@ -6,6 +6,8 @@ import PastorCard from '../components/PastorCard'
 import Img1 from '../assets/item1.png'
 import Img2 from '../assets/item2.png'
 
+import Img from '../assets/aboutbg.webp'
+
 const AboutLagos = () => {
   const data = [{
     id: 1,
@@ -33,7 +35,7 @@ const AboutLagos = () => {
 ]
   return (
     <div className='global'>
-      <HomeContainer title='About President' subtitle='Psalm 37:3' text='“Trust in the LORD, and do good; dwell in the land and befriend faithfulness”' button='read more' />
+      <HomeContainer bgImg={Img} title='About President' subtitle='Psalm 37:3' text='“Trust in the LORD, and do good; dwell in the land and befriend faithfulness”' button='read more' />
       <section>
         <div className="flex">
           <div>
