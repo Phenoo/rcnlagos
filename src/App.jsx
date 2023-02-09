@@ -4,12 +4,14 @@ import Blogs from './pages/Blogs';
 import Contact from './pages/Contact';
 import HomePage from './pages/HomePage';
 import Partnership from './pages/Partnership';
+import SecondPartnership from './pages/SecondPartnership';
 
 import './styles/App.scss'
 
 import Sermons from './pages/Sermons';
 import Events from './pages/Events';
 import Donate from './pages/Donate';
+import SecondDonate from './pages/SecondDonate';
 import President from './pages/President';
 import AboutLagos from './pages/AboutLagos';
 import Programme from './pages/Programme';
@@ -33,8 +35,10 @@ function App() {
         <Route path='/blogs' element={<Blogs />} />
         <Route path='/sermons' element={<Sermons />} />
         <Route path='/partnership' element={<Partnership />} />
+        <Route path='/partner' element={<SecondPartnership />} />
         <Route path='/events' element={<Events />} />
         <Route path='/donate' element={<Donate />} />
+        <Route path='/payonline' element={<SecondDonate />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
       <ScrollUp />

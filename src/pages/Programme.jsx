@@ -52,7 +52,7 @@ const Programme = () => {
   ]
   return (
     <div className='program'>
-      <HomeContainer  bgImg={Img} title='About President' subtitle='Psalm 37:3' text='“Trust in the LORD, and do good; dwell in the land and befriend faithfulness”' button='read more' />
+      <HomeContainer  bgImg= {Img} title='About President' subtitle='Psalm 37:3' text='“Trust in the LORD, and do good; dwell in the land and befriend faithfulness”' button='read more' />
       <section>
         <div className='center'>
           <h6 className='headline'>

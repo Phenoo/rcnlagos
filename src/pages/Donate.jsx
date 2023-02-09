@@ -1,5 +1,7 @@
 import React from 'react'
 import HomeContainer from '../components/HomeContainer'
+import {Link } from 'react-router-dom'
+import Img from '../assets/eventbg.webp'
 
 const Donate = () => {
   const data = [{
@@ -27,7 +29,7 @@ const Donate = () => {
   ]
   return (
     <div className="donate">
-      <HomeContainer    title='donate' text='“Trust in the LORD, and do good; dwell in the land and befriend faithfulness”'  button='donate now' />
+      <HomeContainer   bgImg={Img}     title='donate' text='“Trust in the LORD, and do good; dwell in the land and befriend faithfulness”'  button='donate now' />
       <section>
       <div className="center">
         <h4 className="tophead">
@@ -66,7 +68,9 @@ const Donate = () => {
         </div>
         <div>
           <button className="button">
-            pay online
+            <Link to='/payonline'>
+              pay online
+            </Link>
           </button>
           </div>
       </div>

@@ -114,20 +114,23 @@ nav {
 }
 
 select {
+    cursor: pointer;
     background: none;
     color: #fff;
     text-transform: capitalize;
     width: 100px;
-    padding: 8px;
+    padding: 16px;
+
 }
 
 option {
+    padding: 16px;
     color: #111;
 }
 
 select:active {
     background: #808080;
-    color: #fff;
+    color: $orange;
 }
 
 .space-between {
@@ -161,6 +164,9 @@ select:active {
     text-align: center;
     flex-direction: column;
     gap: 12px;
+    .logo{
+        margin: 1rem auto;
+    }
 }
 
 .grid {
@@ -335,9 +341,25 @@ select:active {
 .sermon-card {
     width: 280px;
     height: 340px;
+    cursor: pointer;
+
     .image {
         height: 200px;
         margin-bottom: 8px;
+        background: $text-color;
+        border-radius: 4px;
+        position: relative;
+    }
+    .music{
+        position: absolute;
+        left: 45%;
+        top: 50%;
+        transform: translateX(-50%, -50%);
+        margin: 0 auto;
+        color: #fff;
+        border-radius: 5px;
+        padding: 10px;
+        border: 1px solid #fff;
     }
     p {
         margin: 10px 0;
@@ -348,6 +370,10 @@ select:active {
         color: $orange;
         border: 1px solid $orange;
         padding: 10px;
+    &:hover{
+        color: #fff;
+        background-color: $orange;
+    }
     }
 }
 
@@ -500,6 +526,40 @@ select:active {
     }
     &:active {
         transform: scale(0.8);
+    }
+}
+
+.form-component {
+    .tophead {
+        font-size: 1.35rem;
+        margin: 1rem 0;
+    }
+    .grid {
+        margin: 0 0 1rem 0;
+        .form-input {
+            margin: 0 1rem 0 0;
+        }
+    }
+    select {
+        background-color: #fff;
+        color: #808080;
+    }
+    .form-input {
+        margin-bottom: 1rem;
+        span {
+            color: red;
+        }
+        label {
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        input,
+        select, textarea {
+            width: 100%;
+            display: block;
+            padding: 10px;
+            border: 1px solid #808080;
+        }
     }
 }
 
@@ -701,7 +761,7 @@ footer {
 }
 
 .donate-box {
-    // width: 400px;
+    width: 400px;
     // height: 400px;
     margin: 1rem auto;
     padding: 2rem;

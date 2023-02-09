@@ -2,6 +2,7 @@ import React from 'react'
 import HomeContainer from '../components/HomeContainer'
 
 import Img from '../assets/partbg.webp'
+import {Link } from 'react-router-dom'
 
 
 const Partnership = () => {
@@ -97,7 +98,9 @@ const Partnership = () => {
           <br />
           <br />
           <button className="button">
-            become a partner
+            <Link to='/partner'>
+              become a partner
+            </Link>
           </button>
         </div>
       </section>
