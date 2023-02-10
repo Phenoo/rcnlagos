@@ -120,7 +120,6 @@ select {
     text-transform: capitalize;
     width: 100px;
     padding: 16px;
-
 }
 
 option {
@@ -164,7 +163,7 @@ select:active {
     text-align: center;
     flex-direction: column;
     gap: 12px;
-    .logo{
+    .logo {
         margin: 1rem auto;
     }
 }
@@ -342,7 +341,6 @@ select:active {
     width: 280px;
     height: 340px;
     cursor: pointer;
-
     .image {
         height: 200px;
         margin-bottom: 8px;
@@ -350,7 +348,7 @@ select:active {
         border-radius: 4px;
         position: relative;
     }
-    .music{
+    .music {
         position: absolute;
         left: 45%;
         top: 50%;
@@ -370,10 +368,10 @@ select:active {
         color: $orange;
         border: 1px solid $orange;
         padding: 10px;
-    &:hover{
-        color: #fff;
-        background-color: $orange;
-    }
+        &:hover {
+            color: #fff;
+            background-color: $orange;
+        }
     }
 }
 
@@ -554,7 +552,8 @@ select:active {
             margin-bottom: 10px;
         }
         input,
-        select, textarea {
+        select,
+        textarea {
             width: 100%;
             display: block;
             padding: 10px;
@@ -840,6 +839,11 @@ footer {
     }
     .nav-item {
         margin-bottom: 1rem;
+        font-size: 1.35rem;
+        color: #111;
+    }
+    select {
+        width: 120px;
         font-size: 1.35rem;
         color: #111;
     }
