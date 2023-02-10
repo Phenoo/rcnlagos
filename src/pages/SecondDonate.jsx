@@ -26,49 +26,66 @@ const SecondDonate = () => {
           <p>
           Join us in honoring the LORD with your offering and time.
           </p>
+          <br />
         </div>
-        <div className="donate-box form-component">
-            <form>
-                <div className="form-input">
-                  <label>
-                    First Name  <span>*</span>
-                  </label>
-                  <input type="text" name="name" placeholder="Jane Doe" />
+        <div className="donate-box-second">
+          <div className="form-component">
+              <form>
+                <div className="grid">
+                  <div className="form-input">
+                      <label>
+                        First Name  <span>*</span>
+                      </label>
+                      <input type="text" name="name" placeholder="Jane Doe" />
+                    </div>
+                    <div className="form-input">
+                      <label>
+                        Last Name  <span>*</span>
+                      </label>
+                      <input type="text" name="name" placeholder="Jane Doe" />
+                    </div>
                 </div>
                 <div className="form-input">
                   <label>
-                    Last Name  <span>*</span>
+                    Email Address  <span>*</span>
                   </label>
-                  <input type="text" name="name" placeholder="Jane Doe" />
-                </div>
-              <div className="form-input">
-                <label>
-                  Email Address  <span>*</span>
-                </label>
-                <input type="text" name="email" placeholder="janedoe@mail.com" />
-              </div>
-              <div className="form-input">
-                <label>
-                  Phone Number  <span>*</span>
-                </label>
-                <input type="text" name="email" placeholder="janedoe@mail.com" />
-              </div>
-                <div className="form-input">
-                  <label>
-                    Country
-                  </label>
-                  <input type="text" name="name" placeholder="Gold Sycamore" />
+                  <input type="text" name="email" placeholder="janedoe@mail.com" />
                 </div>
                 <div className="form-input">
                   <label>
-                    Additional Comment
+                    Phone Number  <span>*</span>
                   </label>
-                  <textarea name="" id="" cols="30" rows="10"></textarea>
+                  <input type="text" name="email" placeholder="janedoe@mail.com" />
                 </div>
-              <button type="submit" className="button">  
-                submit
-              </button>
-          </form>
+                  <div className="form-input">
+                    <label>
+                      Country
+                    </label>
+                    <input type="text" name="name" placeholder="Gold Sycamore" />
+                  </div>
+                  <div className='flex'>
+                    <div className="form-input">
+                      <select name="" id="">
+                        <option>NGN</option>
+                      </select>
+                    </div>
+                    <div className='form-input'>
+                      <input type="text" name="name" placeholder="Please specify amount" />
+                    </div>
+                  </div>
+                  <div className="form-input">
+                    <label>
+                      Additional Comment
+                    </label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                  </div>
+                  <div>
+                    <button type="submit" className="button">  
+                      pay now
+                    </button>
+                  </div>
+            </form>
+          </div>
         </div>
       </section>
     </div>

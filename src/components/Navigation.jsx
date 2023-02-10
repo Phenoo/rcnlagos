@@ -16,7 +16,7 @@ const Navigation = () => {
           <div className={`nav-links ${navbar ? 'show' : ''}`}>
             <ul className='menu'>
             {navItems.map((item) => {
-              if (item.title === "About") {
+              if (item.title === "About us") {
                 return (
                 <Dropdown />
                 );

@@ -5,7 +5,7 @@ export const navItems = [{
         cName: "nav-item",
     }, {
         id: 2,
-        title: "About",
+        title: "About us",
         path: "",
         cName: "nav-item",
     },
@@ -49,7 +49,7 @@ export const serviceDropdown = [{
     },
     {
         id: 2,
-        title: "About RCN Lagos",
+        title: "About RCN Warri",
         path: "/about/lagos",
         cName: "submenu-item",
     },

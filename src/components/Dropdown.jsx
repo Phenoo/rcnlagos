@@ -12,7 +12,7 @@ function Dropdown() {
   return (
     <li>
       <select onChange={event => handleChange(event.target.value)}>
-      <option className='nav-item'>About</option>
+      <option className='nav-item'>About Us</option>
       {serviceDropdown.map((item, index) => (
           <option value={`${item.path}`} key={index}>{item.title}</option> 
         )

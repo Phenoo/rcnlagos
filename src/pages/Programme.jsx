@@ -56,9 +56,9 @@ const Programme = () => {
       <section>
         <div className='center'>
           <h6 className='headline'>
-            our programmes
+            our programs
           </h6>
-          <h4>
+          <h4 className='tophead'>
             RCN Lagos Programs And Activities
           </h4>
         </div>

@@ -1,15 +1,71 @@
 import React from 'react'
 import HomeContainer from '../components/HomeContainer'
-import Offer from '../components/sections/Offer'
 import PastorCard from '../components/PastorCard'
 
 import Img from '../assets/aboutbg.webp'
+import { CiGlobe } from 'react-icons/ci'
+import {AiOutlineHeart} from 'react-icons/ai'
+import {BiDiamond} from 'react-icons/bi'
+import { HiOutlineUserGroup } from 'react-icons/hi'
+
+const Offer = () => {
+  const data = [{
+    id: 1,
+    svg: <CiGlobe />,
+    name: 'our mission',
+    desc: "Preservation of biblical doctrine and living out the truth of God's word as it is written in the Holy Scriptures"
+  },
+  {
+    id: 2,
+    svg: <AiOutlineHeart />,
+    name: 'our vision',
+    desc: 'To equip ministers of the gospel of our Lord Jesus Christ in Africa and Europe to become effective in the work of the ministry'
+  },{
+    id:3,
+    svg: <HiOutlineUserGroup />,
+    name: 'our community',
+    desc: 'Our community is one that strives for the rebirth of Apostolic Christianity in our generation'
+  },
+  {
+    id: 4,
+    svg: <BiDiamond />,
+    name: 'our values',
+    desc: 'Dedication, Relevance, Excellence, Accountability, Resilience, Forbearance, Faithfulness'
+  },
+
+  ]
+  return (
+    <div className='offer'>
+      <section>
+        <div className="offer-container">
+          <div className="four-grid">
+            {
+              data.map((item) => (
+                <article key={item.id} className="center offer-item">
+                  <span>
+                    {item.svg}
+                  </span>
+                  <h6>
+                    {item.name}
+                  </h6>
+                  <p>
+                    {item.desc}
+                  </p>
+                </article>
+              ))
+            }
+          </div>
+        </div>
+      </section>
+    </div>
+  )
+}
 
 
 const AboutGlobal = () => {
   return (
     <div className='global'>
-      <HomeContainer bgImg={Img}   title='About President' subtitle='Psalm 37:3' text='“Trust in the LORD, and do good; dwell in the land and befriend faithfulness”' button='read more' />
+      <HomeContainer bgImg={Img}   title='About RCN Global' subtitle='Psalm 37:3' text='“Trust in the LORD, and do good; dwell in the land and befriend faithfulness”' button='read more' />
       <section>
         <div className="flex">
           <div>

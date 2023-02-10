@@ -21,7 +21,7 @@ const Partnership = () => {
           The ministry is saddled with a huge task to bear the yoke side-by-side the Master, hence the need to create this platform to accommodate the various cares: in-reach and out-reach, of this divine assignment
         </p>
         <div className="tri-grid">
-          <article className="center">
+          <article className="center-item">
             <h4>
               our mission
             </h4>
@@ -29,7 +29,7 @@ const Partnership = () => {
               To effectively mobilize & deploy resources for the building of an apostolic community where the weak becomes strong for an active participation in the ministry of the word and prayers through:
             </p>
           </article>
-          <article className="center">
+          <article className="center-item">
             <h4>
               our vision
             </h4>
@@ -38,7 +38,7 @@ const Partnership = () => {
               We aim to raise people who are passionately committed to the advancement of God’s Kingdom by first giving themselves to the Lord; and then the resources entrusted in their hands to His work.
             </p>
           </article>
-          <article className="center">
+          <article className="center-item">
             <h4>
               our goals
             </h4>
@@ -93,7 +93,6 @@ const Partnership = () => {
               Reporting and audit of funds from partners.
             </li>
           </div>
-          <br />
           <br />
           <br />
           <br />

@@ -1,5 +1,5 @@
 import React from 'react'
-import { AiOutlineCalendar, AiOutlineComment } from 'react-icons/ai'
+import { AiOutlineCalendar } from 'react-icons/ai'
 import {  FaArrowRight } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
@@ -27,7 +27,7 @@ const BlogCard = ({item}) => {
               </p>
             </span>
           </div>
-          <div className="flex">
+          {/* <div className="flex">
             <span>
               <AiOutlineComment />
             </span>
@@ -36,10 +36,10 @@ const BlogCard = ({item}) => {
                 13 comments
               </p>
             </span>
-          </div>
+          </div> */}
         </div>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio possimus modi molestiae assumenda? Neque molestiae ullam quasi! Nam ab at exercitationem quaerat veritatis impedit facere.
+        Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
         </p>
         <div className="btn flex">
           <span>

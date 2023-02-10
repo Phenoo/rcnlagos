@@ -10,7 +10,7 @@ const President = () => {
     <div className='president'>
       <HomeContainer bgImg={Img} title='About President' subtitle='Psalm 37:3' text='“Trust in the LORD, and do good; dwell in the land and befriend faithfulness”' button='read more' />
       <section>
-        <div className="flex">
+        <div className="flex-grid">
           <div>
             <h6 className='headline'>
               president
@@ -56,12 +56,14 @@ const President = () => {
         <br />
         <br />
 
+      <div className="bottom">
         <h4>
-          Apostle Arome Osayi 
-        </h4>
-        <h6>
-          The Set Man of Remnant Christian Network (RCN) Global
-        </h6>
+            Apostle Arome Osayi 
+          </h4>
+          <h6>
+            The Set Man of Remnant Christian Network (RCN) Global
+          </h6>
+        </div>
       </section>
     </div>
   )

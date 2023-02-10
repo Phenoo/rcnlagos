@@ -64,6 +64,7 @@ button {
     outline: none;
     border: none;
     font-family: "Open Sans";
+    text-transform: capitalize;
     cursor: pointer;
 }
 
@@ -106,7 +107,7 @@ nav {
         justify-content: center;
         align-items: center;
         padding: 0px;
-        gap: 60px;
+        gap: 40px;
     }
     a {
         text-transform: capitalize;
@@ -116,10 +117,11 @@ nav {
 select {
     cursor: pointer;
     background: none;
-    color: #fff;
+    color: #F3F4F6;
     text-transform: capitalize;
-    width: 100px;
+    width: 120px;
     padding: 16px;
+    font-size: 1rem;
 }
 
 option {
@@ -129,7 +131,10 @@ option {
 
 select:active {
     background: #808080;
-    color: $orange;
+}
+
+option:active {
+    background: #808080;
 }
 
 .space-between {
@@ -203,6 +208,7 @@ select:active {
 .tophead {
     font-size: 1.75rem;
     text-transform: capitalize;
+    line-height: 44px;
     // margin: 0.8rem 0;
 }
 
@@ -300,32 +306,43 @@ select:active {
             font-weight: 700;
         }
         p {
+            width: 270px;
+            margin: 0 auto;
+            text-transform: capitalize;
             font-weight: 400;
             font-size: 12px;
             line-height: 20px;
+            text-align: center;
         }
     }
 }
 
 .event-card {
-    width: 300px;
+    width: 320px;
     height: 400px;
-    margin: 1rem 0;
+    margin: 1.5rem 0;
     h4 {
         text-transform: capitalize;
         font-weight: 600;
-        font-size: 22px;
+        font-size: 24px;
         line-height: 36px;
+        margin: 4px 0;
     }
     h6 {
         margin: 2px 0;
         font-family: 'Open Sans';
         font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
+        font-weight: 500;
+        font-size: 14px;
         line-height: 28px;
+        margin: 4px 0;
+        color: #1F2937;
     }
     p {
+        margin: 4px 0;
+        font-size: 12px;
+    }
+    svg {
         font-size: 12px;
     }
     .flex {
@@ -350,17 +367,32 @@ select:active {
     }
     .music {
         position: absolute;
-        left: 45%;
-        top: 50%;
-        transform: translateX(-50%, -50%);
+        width: 48px;
+        height: 48px;
+        left: 116px;
+        top: 76px;
         margin: 0 auto;
         color: #fff;
         border-radius: 5px;
         padding: 10px;
-        border: 1px solid #fff;
+        // border: 1px solid #fff;
+    }
+    svg {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        left: 0px;
+        top: 0px;
     }
     p {
         margin: 10px 0;
+    }
+    h6 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        /* identical to box height, or 140% */
+        letter-spacing: -0.02em;
     }
     button {
         width: 100%;
@@ -376,7 +408,16 @@ select:active {
 }
 
 .partner-section {
-    background: rgba(14, 31, 53, 0.65, );
+    background: url('../assets/bg.png');
+    height: 520px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.partner-container {
+    background: rgba(14, 31, 53, 0.65);
+    color: #F3F4F6;
     height: 520px;
     h4 {
         max-width: 600px;
@@ -386,10 +427,8 @@ select:active {
 
 .blog-card {
     width: 350px;
-    height: 500px;
-    /* Shades/White */
-    background: #FFFFFF;
-    /* Shadow/Small */
+    height: 560px;
+    background: #F9FAFB;
     box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px -1px rgba(16, 24, 40, 0.1);
     border-radius: 8px;
     transition: all 0.3s ease;
@@ -414,7 +453,8 @@ select:active {
         }
     }
     p {
-        font-size: 12px;
+        font-size: 16px;
+        line-height: 24px
     }
     .btn {
         margin-top: 1rem;
@@ -422,6 +462,10 @@ select:active {
         svg {
             color: $orange;
         }
+    }
+    h4 {
+        font-size: 22px;
+        line-height: 28px;
     }
 }
 
@@ -490,12 +534,13 @@ select:active {
             flex-direction: row;
             align-items: flex-start;
             padding: 0px;
-            gap: 8px;
+            gap: 20px;
         }
         .form-input {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+            margin-right: 10px;
         }
     }
 }
@@ -510,7 +555,7 @@ select:active {
     right: 1rem;
     bottom: 1.5rem;
     background-color: $orange;
-    color: $text-color;
+    color: #fff;
     border: 1px solid $orange;
     display: flex;
     align-items: center;
@@ -528,6 +573,7 @@ select:active {
 }
 
 .form-component {
+    gap: 2rem;
     .tophead {
         font-size: 1.35rem;
         margin: 1rem 0;
@@ -543,13 +589,15 @@ select:active {
         color: #808080;
     }
     .form-input {
-        margin-bottom: 1rem;
+        margin: 1.2rem 0;
         span {
             color: red;
         }
         label {
+            text-transform: capitalize;
+            font-size: 14px;
             font-weight: 600;
-            margin-bottom: 10px;
+            color: #374151;
         }
         input,
         select,
@@ -557,14 +605,25 @@ select:active {
             width: 100%;
             display: block;
             padding: 10px;
-            border: 1px solid #808080;
+            margin-top: 10px;
+            border: 0.5px solid #4B5563;
+            &::placeholder {
+                color: #9CA3AF;
+                font-size: 14px;
+            }
+        }
+        option {
+            &::placeholder {
+                color: #9CA3AF;
+                font-size: 14px;
+            }
         }
     }
 }
 
 footer {
     background-color: #17143D;
-    color: #fff;
+    color: #F9FAFB;
     section {
         // margin: 2rem auto;
         padding-bottom: 1rem;
@@ -576,7 +635,13 @@ footer {
             font-size: 1.25rem;
         }
         p {
-            margin: 5px 0;
+            margin: 12px 0;
+            font-size: 14px;
+        }
+    }
+    span {
+        svg {
+            color: $orange;
         }
     }
     ul {
@@ -590,9 +655,10 @@ footer {
     }
     .copytext {
         text-align: center;
+        padding: 1rem;
     }
     .divider {
-        background: #fff;
+        background: #F9FAFB;
         margin-top: 2rem
     }
 }
@@ -602,14 +668,34 @@ footer {
     .flex {
         gap: 4rem;
     }
+    p {
+        font-size: 16px;
+        line-height: 28px;
+    }
 }
 
 .president {
-    .flex {
-        gap: 4rem;
+    .flex-grid {
+        gap: 1rem;
+        display: grid;
+        grid-template-columns: 60% 40%;
     }
     .image {
-        width: 600px;
+        height: 350px;
+        width: 350px;
+    }
+    p {
+        line-height: 28px;
+    }
+    .bottom {
+        h4 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        h6 {
+            font-weight: 500;
+            font-size: 16px;
+        }
     }
 }
 
@@ -619,7 +705,7 @@ footer {
         flex-direction: column;
         align-items: flex-start;
         padding: 0px;
-        gap: 16px;
+        gap: 4px;
         width: 280px;
         height: 368px;
         .image {
@@ -632,6 +718,9 @@ footer {
             border: 2px solid #EB9D75;
             border-radius: 50px 3px;
         }
+        h6 {
+            font-size: 22px;
+        }
     }
 }
 
@@ -643,24 +732,36 @@ footer {
     }
     h6 {
         margin: 5px 0;
+        font-size: 28px;
+        font-weight: 500;
+    }
+    h4 {
+        font-size: 24px;
     }
     p {
-        font-size: 10px;
+        font-weight: 600;
+        font-size: 14px;
     }
 }
 
 .program,
-.global {
+.global,
+.program {
     .grid {
-        gap: 2rem;
+        gap: 3rem;
     }
 }
 
 .program-card {
     h4 {
+        font-size: 24px;
         margin: 5px 0;
     }
     p {
+        line-height: 24px;
+        font-size: 12px;
+    }
+    svg {
         font-size: 12px;
     }
 }
@@ -690,7 +791,7 @@ footer {
     .active {
         border: none;
         background: $orange;
-        color: #fff;
+        color: #F9FAFB;
     }
 }
 
@@ -726,25 +827,40 @@ footer {
         text-align: center;
         margin: 1rem 0;
     }
-    .center {
+    .center-item {
         border: 1px solid $orange;
         padding: 10px;
         border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // gap: 16px;
+        width: 320px;
+        height: 244px;
         h4 {
             text-transform: capitalize;
             font-size: 24px;
+            margin-bottom: 10px;
         }
         p {
-            font-size: 14px;
+            font-size: 18px;
+            text-align: center;
             line-height: 28px;
         }
         li {
             margin-bottom: 10px;
+            font-size: 18px;
+            text-align: center;
+            line-height: 28px;
         }
     }
     li {
-        font-size: 14px;
+        font-size: 16px;
         margin: 5px 0;
+    }
+    p {
+        font-size: 18px;
+        line-height: 26px;
     }
 }
 
@@ -759,16 +875,45 @@ footer {
     }
 }
 
-.donate-box {
-    width: 400px;
-    // height: 400px;
-    margin: 1rem auto;
-    padding: 2rem;
+.donate-box-second {
+    width: 680px;
+    height: 888px;
+    margin: 0 auto;
     /* Neutral/100 */
     background: #F3F4F6;
     /* Shadow/Medium */
     box-shadow: 0px 4px 6px -1px rgba(16, 24, 40, 0.1), 0px 2px 4px -2px rgba(16, 24, 40, 0.1);
     border-radius: 24px;
+    .form-component {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 80px;
+        width: 600px;
+        height: 808px;
+        margin: 0 auto;
+    }
+    .button {
+        width: 100%;
+    }
+    .flex {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        width: 100%;
+        gap: 8px;
+    }
+}
+
+.donate-box {
+    width: 360px;
+    // height: 400px;
+    margin: 1rem auto;
+    padding: 3rem 2rem;
+    background: #F3F4F6;
+    box-shadow: 0px 4px 6px -1px rgba(16, 24, 40, 0.1), 0px 2px 4px -2px rgba(16, 24, 40, 0.1);
+    border-radius: 20px;
     h4 {
         text-transform: capitalize;
     }
@@ -776,18 +921,33 @@ footer {
         text-transform: uppercase;
     }
     p {
+        width: 100%;
+        text-align: start;
+        font-size: 12px;
         text-transform: capitalize;
     }
-    .grid {
+    .gridxx {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 16px;
         margin: 1.5rem 0;
+        letter-spacing: -0.02em;
         div {
             display: flex;
+            flex-direction: row;
             align-items: flex-start;
+        }
+        h6 {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            width: 133px;
         }
     }
 }
 
-//////////////////////CONTACT/////////////
 //////////////////MEDIA QUERY/////////////////////
 @media screen and (max-width: 800px) {
     nav {
@@ -844,7 +1004,7 @@ footer {
     }
     select {
         width: 120px;
-        font-size: 1.35rem;
+        font-size: 1.25rem;
         color: #111;
     }
     .grid {

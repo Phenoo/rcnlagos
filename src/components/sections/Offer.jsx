@@ -11,25 +11,25 @@ const Offer = () => {
   const data = [{
     id: 1,
     svg: <CiGlobe />,
-    name: 'our mission',
-    desc: "Preservation of biblical doctrine and living out the truth of God's word as it is written in the Holy Scriptures"
+    name: 'raise',
+    desc: "believers to see with the eyes of the Kingdom"
   },
   {
     id: 2,
     svg: <AiOutlineHeart />,
-    name: 'our vision',
-    desc: 'To equip ministers of the gospel of our Lord Jesus Christ in Africa and Europe to become effective in the work of the ministry'
+    name: 'restore',
+    desc: 'Apostolic thinking of the Christian'
   },{
     id:3,
     svg: <HiOutlineUserGroup />,
-    name: 'our community',
-    desc: 'Our community is one that strives for the rebirth of Apostolic Christianity in our generation'
+    name: 'revive',
+    desc: 'true apostolic teaching in the Body'
   },
   {
     id: 4,
     svg: <BiDiamond />,
-    name: 'our values',
-    desc: 'Dedication, Relevance, Excellence, Accountability, Resilience, Forbearance, Faithfulness'
+    name: 'renew',
+    desc: 'the Christian’s walk with Gods'
   },
 
   ]

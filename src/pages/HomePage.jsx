@@ -19,9 +19,9 @@ const HomePage = () => {
     <>
       <HomeContainer bgImg={Img} subtitle='Psalm 37:3' text='“Trust in the LORD, and do good; dwell in the land and befriend faithfulness”' button='read more' />
       <Offer />
-      <UpcomingEvents />
       <Listen />
       <PartnerShipSection />
+      <UpcomingEvents />
       <BlogSection />
       <Testimonials />
       <MessageYt />

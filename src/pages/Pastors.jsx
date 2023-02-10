@@ -45,7 +45,7 @@ const Pastors = () => {
           <h6 className='headline'>
             pastors
           </h6>
-          <h4>
+          <h4 className='tophead'>
             Ministers With Vision
           </h4>
         </div>

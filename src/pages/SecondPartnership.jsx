@@ -4,7 +4,7 @@ import HomeContainer from '../components/HomeContainer'
 import Img from '../assets/partbg.webp'
 const SecondPartnership = () => {
   return (
-    <div>
+    <div className="partner-page">
       <HomeContainer bgImg={Img}  title='Partnership' text='“Trust in the LORD, and do good; dwell in the land and befriend faithfulness”'  button='join us'  />
       <section>
         <div className='center'>
@@ -76,14 +76,17 @@ const SecondPartnership = () => {
                   <label>
                     Country
                   </label>
-                  <input type="text" name="name" placeholder="Gold Sycamore" />
+                  <select name="" id="">
+                  <option>select an option</option>
+                </select>
                 </div>
                 <div className="form-input">
                   <label>
                     State
                   </label>
-                  <input type="text" name="email" placeholder="janedoe@mail.com" />
-                </div>
+                  <select name="" id="">
+                  <option>select an option</option>
+                </select>                </div>
               </div>
               <div className="form-input">
                 <label>
@@ -124,6 +127,7 @@ const SecondPartnership = () => {
                 </label>
                 <input type="text" name="email" placeholder="janedoe@mail.com" />
               </div>
+              <br />
               <button type="submit" className="button">  
                 submit
               </button>

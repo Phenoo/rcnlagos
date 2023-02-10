@@ -42,10 +42,10 @@ const Donate = () => {
           <h4>
             account details
           </h4>
-          <div>
+          <div className='frame'>
             {
               data.map((item, index) => (
-                <div className="grid" key={index}>
+                <div className="gridxx" key={index}>
                   <div>
                     <h6>
                       {item.id}:
